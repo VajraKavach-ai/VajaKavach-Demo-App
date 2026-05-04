@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" rx="12"/>
+  <circle cx="200" cy="120" r="60" fill="rgba(255,255,255,0.15)"/>
+  <polygon points="200,75 230,135 170,135" fill="white" opacity="0.9"/>
+  <circle cx="200" cy="115" r="12" fill="#4facfe"/>
+  <text x="200" y="220" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="600">Affordable Item</text>
+  <text x="200" y="250" font-family="system-ui,sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" text-anchor="middle">$9.99</text>
+</svg>

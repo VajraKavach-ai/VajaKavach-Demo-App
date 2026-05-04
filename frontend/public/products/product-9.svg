@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a9e"/>
+      <stop offset="100%" style="stop-color:#fecfef"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" rx="12"/>
+  <circle cx="200" cy="120" r="60" fill="rgba(255,255,255,0.2)"/>
+  <path d="M200 85 C215 85 225 95 225 108 C225 130 200 150 200 150 C200 150 175 130 175 108 C175 95 185 85 200 85 Z" fill="white" opacity="0.9"/>
+  <circle cx="195" cy="110" r="5" fill="#ff9a9e"/>
+  <circle cx="205" cy="110" r="5" fill="#ff9a9e"/>
+  <text x="200" y="220" font-family="system-ui,sans-serif" font-size="18" fill="#6b2d3a" text-anchor="middle" font-weight="600">Stylish Item</text>
+  <text x="200" y="250" font-family="system-ui,sans-serif" font-size="14" fill="rgba(107,45,58,0.7)" text-anchor="middle">$27.99</text>
+</svg>

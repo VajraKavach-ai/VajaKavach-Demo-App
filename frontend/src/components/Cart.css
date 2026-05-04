@@ -1,0 +1,134 @@
+.vk-cart {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(30, 30, 46, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+.vk-cart h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.vk-cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vk-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.vk-cart-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.vk-cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.vk-cart-remove {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.vk-cart-checkout {
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #7c92f5, #8b5ecf);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.vk-cart-checkout:hover {
+  opacity: 0.9;
+}
+
+.vk-order-confirmation h2 {
+  color: #4ade80;
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.vk-confirmation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.vk-confirmation-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.vk-confirmation-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.vk-confirmation-value {
+  font-size: 1rem;
+  color: #f1f5f9;
+}
+
+.vk-confirmation-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vk-confirmation-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.vk-confirmation-items li {
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}

@@ -1,0 +1,158 @@
+.vk-admin-page {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.vk-admin-page h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.vk-admin-add {
+  background: linear-gradient(135deg, #7c92f5, #8b5ecf);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.vk-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(30, 30, 46, 0.95);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vk-admin-table th,
+.vk-admin-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.vk-admin-table th {
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.vk-admin-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.vk-admin-edit {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.vk-admin-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.vk-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.vk-product-form {
+  background: #1e1e2e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: #ffffff;
+}
+
+.vk-product-form h2 {
+  margin: 0 0 0.5rem;
+}
+
+.vk-product-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #cbd5e0;
+}
+
+.vk-product-form input,
+.vk-product-form textarea {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.vk-product-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.vk-form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.vk-form-actions button {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vk-form-actions button[type="submit"] {
+  background: linear-gradient(135deg, #7c92f5, #8b5ecf);
+  color: white;
+}
+
+.vk-form-actions button[type="button"] {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+.vk-form-error {
+  color: #fca5a5;
+  font-size: 0.85rem;
+  margin: 0;
+}
