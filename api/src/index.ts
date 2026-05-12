@@ -114,7 +114,7 @@ app.put("/api/products/:id", (req, res) => {
   // eval(`console.log('MCP_DEMO_EVAL_INJECTION: Password is ' + ${JSON.stringify(password)})`);
 
   // --- MCP_DEMO_SECURITY_PASSWORD_LOGGING: Uncomment to log passwords to access logs ---
-  logger.audit("Product update attempt", "admin", { password, productId: req.params.id }); // Exposes password!
+  //logger.audit("Product update attempt", "admin", { password, productId: req.params.id }); // Exposes password!
 
   // --- MCP_DEMO_SECURITY_NO_INPUT_VALIDATION: Uncomment to skip validation ---
   // db.update(productsTable).set(update as any).where(eq(productsTable.id, parseInt(req.params.id))).run();
