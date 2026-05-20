@@ -67,7 +67,7 @@ app.post("/api/orders", (req, res) => {
   // (global as any).leakArray.push(new Array(1000000).fill('leak')); // Grows by 1MB per order
 
   // --- MCP_DEMO_SECURITY_UNSANITIZED_INPUT: Uncomment to accept XSS in user input ---
-  // const maliciousName = user?.name; // No sanitization, could inject HTML/JS
+  const maliciousName = user?.name; // No sanitization, could inject HTML/JS
 
   // --- MCP_DEMO_PERFORMANCE_N_PLUS_ONE: Uncomment to make N+1 queries for items ---
   // for (let i = 0; i < quantity; i++) {
