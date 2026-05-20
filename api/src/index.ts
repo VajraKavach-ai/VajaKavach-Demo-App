@@ -60,14 +60,14 @@ app.post("/api/orders", (req, res) => {
   const { productId, quantity, user } = req.body;
 
   // --- MCP_DEMO_NULL_POINTER: Uncomment to crash on null dereference ---
-  let x: any = null; x.foo = 1; // Crashes when triggered
+  //let x: any = null; x.foo = 1; // Crashes when triggered
 
   // --- MCP_DEMO_MEMORY_LEAK: Uncomment to create unbounded global array ---
   // (global as any).leakArray = (global as any).leakArray || [];
   // (global as any).leakArray.push(new Array(1000000).fill('leak')); // Grows by 1MB per order
 
   // --- MCP_DEMO_SECURITY_UNSANITIZED_INPUT: Uncomment to accept XSS in user input ---
-  const maliciousName = user?.name; // No sanitization, could inject HTML/JS
+  //const maliciousName = user?.name; // No sanitization, could inject HTML/JS
 
   // --- MCP_DEMO_PERFORMANCE_N_PLUS_ONE: Uncomment to make N+1 queries for items ---
   // for (let i = 0; i < quantity; i++) {
