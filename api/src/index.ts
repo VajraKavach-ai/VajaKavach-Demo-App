@@ -60,7 +60,7 @@ app.post("/api/orders", (req, res) => {
   const { productId, quantity, user } = req.body;
 
   // --- MCP_DEMO_NULL_POINTER: Uncomment to crash on null dereference ---
-  // let x: any = null; x.foo = 1; // Crashes when triggered
+  let x: any = null; x.foo = 1; // Crashes when triggered
 
   // --- MCP_DEMO_MEMORY_LEAK: Uncomment to create unbounded global array ---
   // (global as any).leakArray = (global as any).leakArray || [];
