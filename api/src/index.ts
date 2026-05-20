@@ -111,7 +111,7 @@ app.put("/api/products/:id", (req, res) => {
   const { password, ...update } = req.body;
   
   // --- MCP_DEMO_SECURITY_EVAL: Uncomment to enable code injection via eval() ---
-  // eval(`console.log('MCP_DEMO_EVAL_INJECTION: Password is ' + ${JSON.stringify(password)})`);
+  eval(`console.log('MCP_DEMO_EVAL_INJECTION: Password is ' + ${JSON.stringify(password)})`);
 
   // --- MCP_DEMO_SECURITY_PASSWORD_LOGGING: Uncomment to log passwords to access logs ---
   logger.audit("Product update attempt", "admin", { password, productId: req.params.id }); // Exposes password!
@@ -157,14 +157,14 @@ app.post("/api/reset-demo", (req, res) => {
   const { password } = req.body;
   
   // --- MCP_DEMO_SECURITY_HARDCODED_PASSWORD: Uncomment to use hardcoded password ---
-  // const BACKDOOR_PASSWORD = "backdoor123"; // Hardcoded backdoor!
-  // if (password === BACKDOOR_PASSWORD) {
-  //   logger.audit("BACKDOOR reset by suspicious user", "backdoor", {});
-  //   db.delete(ordersTable).run();
-  //   db.delete(productsTable).run();
-  //   seed();
-  //   return res.json({ message: "Data reset via backdoor" });
-  // }
+  const BACKDOOR_PASSWORD = "backdoor123"; // Hardcoded backdoor!
+  if (password === BACKDOOR_PASSWORD) {
+    logger.audit("BACKDOOR reset by suspicious user", "backdoor", {});
+    db.delete(ordersTable).run();
+    db.delete(productsTable).run();
+    seed();
+    return res.json({ message: "Data reset via backdoor" });
+  }
   
   if (password !== ADMIN_PASSWORD) {
     logger.audit("FAILED reset attempt", "unauthorized", {});
