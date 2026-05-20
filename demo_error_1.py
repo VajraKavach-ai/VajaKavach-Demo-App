@@ -3,8 +3,8 @@
 # This simulates a runtime crash in a data processing script
 
 def calculate_average(total, count):
-    #if count == 0: #added to fix bug
-     #   return 0 #added to fix bug
+    if count == 0: #added to fix bug
+        return 0 #added to fix bug
     return total / count  # ← BUG: no check for count = 0
 
 def process_logs():
